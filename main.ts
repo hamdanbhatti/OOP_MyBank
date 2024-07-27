@@ -38,7 +38,7 @@ class BankAccount implements BankAccount {
      }
 
      checkBalance(): void {
-          console.log(chalk.rgb(0, 255, 255)(`Your Current Balance is ${this.balance}`));
+          console.log(chalk.rgb(0, 255, 255)(`\n\t\tYour Current Balance is ${this.balance}\n`));
      }
 }
 
@@ -131,10 +131,10 @@ async function main() {
           });
 
           if (loginAgain.choice === "Exit") {
-               console.log(chalk.rgb(255, 255, 0)("Exiting..."));
+               console.log(chalk.rgb(255, 255, 0)("\n\tExiting..."));
 
                setTimeout(() => {
-                    console.log(chalk.rgb(0, 0, 255)("\nThanks for using MyBank!"));
+                    console.log(chalk.bold.rgb(0, 149, 255)("\n\t\tThanks for using MyBank!\n"));
                }, 2000);
 
                continueProgram = false;
