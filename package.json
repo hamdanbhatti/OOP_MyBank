@@ -1,9 +1,10 @@
 {
-     "name": "oop_mybank",
+     "name": "mhb-oop-mybank",
      "version": "1.0.0",
      "description": "",
      "main": "main.js",
      "type": "module",
+     "bin": "main.js",
      "scripts": {
           "test": "echo \"Error: no test specified\" && exit 1"
      },
